@@ -11,27 +11,20 @@ import jakarta.persistence.Id;
 @Entity
 public class Load {
 	@Id
-
 	private long shipperId;
 	private String loadingpoint;
 	private String unloadingpoint;
 	private String productType;
-	
-
 	private long noOftrucks;
-	
-
-	    private Long weight;
-	
-
+	private Long weight;
 	private String comment;
 	
-
 	private Date date ;
 	public Load() {
 		super();
 		
 	}
+	
 	public Load(long shipperId, String loadingpoint, String unloadingpoint, String productType, long noOftrucks,
 			long weight, String comment, Date date) {
 		super();
@@ -44,6 +37,7 @@ public class Load {
 		this.comment = comment;
 		this.date = date;
 	}
+	
 	@Override
 	public String toString() {
 		return "Load [shipperid=" + shipperId + ", loadingpoint=" + loadingpoint + ", unloadingpoint=" + unloadingpoint
